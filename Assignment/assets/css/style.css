@@ -1,0 +1,346 @@
+/* General reset */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun Batang:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://wallpaperset.com/w/full/8/3/f/119999.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 15px; 
+
+}
+.logo img {
+    width: 100px; 
+    height: 70px; 
+}
+.logo h2 {
+    font-size: 1.5rem;
+    color: black;
+    word-wrap: break-word;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%; 
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+ nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+ nav ul li {
+  margin-left: 20px;
+  padding: 10px 15px;
+}
+ nav ul li a {
+  font-size: 18px;
+  font-family: 'Gowun Batang',cursive;
+  color: #384B70;
+  padding: 10px 20px;
+  border: 2px solid #9393ff; 
+  border-radius: 10px; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+header nav ul li a:hover {
+  color: #fff; 
+  background-color: #55679C; 
+  border-color: #007BFF; 
+}
+
+header h1 {
+  margin: 0; /* Remove default margin */
+}
+
+/* Centered container */
+.container {
+    position: absolute;
+    top: 55%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DancingScript',cursive;
+    background-color: rgba(255, 255, 255, 0.8); /* White box with slight transparency */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    min-height: 600px; /* Ensures the container maintains a vertical shape */
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.wrapper {
+    width: 105%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.input div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.input i {
+    margin-right: 10px;
+    color: #555;
+}
+
+.input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px;
+}
+
+.input input:focus {
+    background-color: #e6f7ff;
+}
+
+.remember {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember label {
+    display: flex;
+    align-items: center;
+}
+
+.remember a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: 2px solid #0056b3;
+}
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.register a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.register a:hover {
+    color: #0056b3;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Change to your preferred hover color */
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto; /* Enable scrolling on small devices */
+        background-size: contain; /* Adjust background size to fit the viewport */
+    }
+
+    header {
+        padding: 10px;
+        flex-direction: column; /* Stack logo and nav vertically */
+        align-items: center;
+    }
+
+    header .logo {
+        font-size: 20px; /* Adjust logo size for smaller screens */
+        margin-bottom: 10px; /* Space between logo and nav */
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    header nav ul li a {
+        font-size: 16px; /* Adjust font size of navigation links */
+        padding: 8px 16px; /* Reduce padding */
+    }
+
+    .container {
+        width: 90%; /* Reduce the width of the centered container */
+        left: 50%; /* Adjust the position */
+        top: 50%; /* Adjust the top position */
+        max-width: 300px; /* Reduce maximum width */
+        min-height: auto; /* Allow height to adjust based on content */
+    }
+
+    .content h1 {
+        font-size: 28px; /* Reduce the size of the heading */
+    }
+
+    .content p {
+        font-size: 16px; /* Reduce the size of the paragraph text */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 18px; /* Further reduce the size of the logo text */
+    }
+
+    header nav ul li a {
+        font-size: 14px; /* Further adjust the font size of navigation links */
+        padding: 6px 12px; /* Further reduce padding */
+    }
+
+    .container {
+        max-width: 260px; /* Further reduce the max width on smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .content h1 {
+        font-size: 24px; /* Further reduce heading size */
+    }
+
+    .content p {
+        font-size: 14px; /* Further reduce paragraph text size */
+    }
+}
+/* Media Queries for Responsive Background Image */
+@media (max-width: 768px) {
+  body {
+      background-size: contain; /* Adjust background size to fit the viewport */
+      background-attachment: scroll; /* Allow scrolling for background */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      background-size: 100% 100%; /* Ensure background image covers the entire viewport */
+      background-attachment: scroll; /* Allow scrolling for background */
+  }
+}
+/* Media Queries for Tablet Mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+      background-size: cover; /* Ensure background image covers the entire viewport */
+      background-attachment: scroll; /* Allow scrolling for background */
+  }
+}

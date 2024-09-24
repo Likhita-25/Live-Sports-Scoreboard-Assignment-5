@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Score Page</title>
+    <link rel="stylesheet" href="./assets/css/Cricket.css"> <!-- Corrected the path -->
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/images/logo.jpg" alt="Logo Image">
+                <h2>LIVE SPORTS SCOREBOARD</h2>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <div class="nav-tabs">
+        <a href="#" data-content="matches" class="filter-btn active">Matches</a>
+        <a href="#" data-content="events" class="filter-btn">Events</a>
+        <a href="#" data-content="players" class="filter-btn">Players</a>
+        <a href="#" data-content="scores" class="filter-btn">Scores</a>        
+        <a href="#" data-content="teams" class="filter-btn">Teams</a>        
+        <a href="#" data-content="referees" class="filter-btn">Referee</a>        
+    </div>
+
+    <!-- Content Display Area -->
+    <div id="contentArea" class="content-area">
+        <h2>Select a filter to see content</h2>
+    </div>
+
+   
+
+    <script src="./assets/js/Cricket.js"></script> <!-- Corrected the path -->
+</body>
+</html>

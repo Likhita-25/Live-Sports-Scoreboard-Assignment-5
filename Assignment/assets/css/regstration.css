@@ -1,0 +1,407 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+  a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    /* height: 150vh; */
+    background-image: url('https://wallpaperset.com/w/full/8/3/f/119999.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* Logo container styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the image and text */
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+/* Image styling */
+.logo img {
+    width: 60px;
+    height: 50px;
+    object-fit: contain; /* Keep the image within the bounds */
+}
+
+/* H2 styling */
+.logo h2 {
+    font-size: 1.5rem;
+    color: black;
+    margin: 0;
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add "..." if text overflows */
+    flex-grow: 1; /* Make h2 take up remaining space */
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 15px; 
+
+}
+.logo img {
+    width: 100px; 
+    height: 70px; 
+}
+.logo h2 {
+    font-size: 1.5rem;
+    color: black;
+    word-wrap: break-word;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%; 
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+ nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+ nav ul li {
+  margin-left: 20px;
+  padding: 10px 15px;
+}
+ nav ul li a {
+  font-size: 18px;
+  font-family: 'Gowun Batang',cursive;
+  color: #384B70;
+  padding: 10px 20px;
+  border: 2px solid #9393ff; 
+  border-radius: 10px; 
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+header nav ul li a:hover {
+  color: #fff; 
+  background-color: #55679C; 
+  border-color: #007BFF; 
+}
+  header h1 {
+    margin: 0; /* Remove default margin */
+  }
+  
+.wrapper {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    margin-top: 100px; 
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.input label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.input div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+.input i {
+    margin-right: 10px;
+    color: #555;
+}
+.input input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 10px;
+}
+.input input:focus {
+    background-color: #e6f7ff;
+}
+.option {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.option select {
+    width: 100%; 
+    padding: 12px;
+    border: none;
+    outline: none;
+    background-color: #fff; /* White background */
+    border-radius: 4px; /* Rounded corners for the select box */
+    appearance: none; /* Removes default arrow for custom styling */
+    font-size: 16px; /* Larger font size for better readability */
+    color: #333; /* Text color */
+    cursor: pointer;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1); /* Slight inner shadow */
+}
+
+.option select:focus {
+    background-color: #e6f7ff; /* Highlighted color on focus */
+}
+
+.option::after {
+    content: "\f078"; /* FontAwesome icon for down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    pointer-events: none;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-between; 
+    gap: 10px; 
+}
+
+.btn {
+    flex: 1; /* Make both buttons the same size */
+    padding: 14px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:focus {
+    outline: 2px solid #0056b3;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.name-group {
+    display: flex;
+    justify-content: space-between;
+}
+.name-group .form-group {
+    width: 48%;
+}
+.gender-btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gender-btn-group .gender-options {
+    display: flex;
+    align-items: center;
+}
+.gender-options label {
+    margin-right: 15px;
+    margin-left: 5px;
+}
+.gender-options input[type="radio"] {
+    margin-left: 0;
+}
+.login {
+    text-align: center;
+    margin-top: 20px;
+}
+.login a {
+    text-decoration: none;
+    color: #007bff;
+}
+.login a:hover {
+    color: #0056b3;
+}
+/* For tablets (less than 768px) */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack the logo and nav items vertically */
+        padding: 10px;
+    }
+
+    header .logo {
+        margin-bottom: 10px; /* Add space between the logo and navigation */
+        text-align: center; /* Center the logo */
+    }
+
+    header nav ul {
+        justify-content: center; /* Center the nav items */
+    }
+
+    .wrapper {
+        width: 90%; /* Reduce width on smaller screens */
+        margin-top: 120px; /* Adjust form position */
+        padding: 40px;
+    }
+}
+
+/* For mobile phones (less than 480px) */
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header .logo {
+        font-size: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px; /* Add space between nav links */
+    }
+
+    .wrapper {
+        width: 95%; /* Further reduce the width for smaller screens */
+        padding: 30px;
+    }
+
+    .input div {
+        flex-direction: column; /* Stack input elements vertically */
+    }
+
+    .btn-group {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add space between the buttons */
+    }
+}
+/* Media queries for responsiveness */
+
+/* For tablets (less than 768px) */
+@media (max-width: 768px) {
+    /* Adjust header for tablets */
+    header {
+        padding: 15px;
+        flex-direction: column; /* Stack logo and nav items vertically */
+        align-items: center; /* Center items horizontally */
+        gap: 10px; /* Space between logo and nav */
+    }
+
+    header .logo {
+        font-size: 20px; /* Adjust logo size */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Space between nav links */
+    }
+
+    .wrapper {
+        width: 90%; /* Adjust width of wrapper */
+        margin-top: 120px; /* Add margin-top to avoid overlap with header */
+        padding: 30px; /* Adjust padding */
+    }
+
+    .input div {
+        flex-direction: column; /* Stack input elements and icons vertically */
+    }
+
+    .btn-group {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Space between buttons */
+    }
+}
+
+/* For mobile phones (less than 480px) */
+@media (max-width: 480px) {
+    /* Adjust header for mobile phones */
+    header {
+        padding: 10px;
+        flex-direction: column; /* Stack logo and nav items vertically */
+        align-items: center; /* Center items horizontally */
+    }
+
+    header .logo {
+        font-size: 18px; /* Further adjust logo size */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items */
+    }
+
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 8px; /* Space between nav links */
+    }
+
+    .wrapper {
+        width: 95%; /* Adjust width of wrapper */
+        margin-top: 100px; /* Adjust margin-top */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .input div {
+        flex-direction: column; /* Stack input elements and icons vertically */
+    }
+
+    .btn-group {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 8px; /* Space between buttons */
+    }
+
+    .input i {
+        font-size: 14px; /* Adjust icon size */
+    }
+}

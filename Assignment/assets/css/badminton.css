@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the image and text */
+    flex-wrap: wrap; /* Allows the text to wrap if necessary */
+}
+
+/* Image styling */
+.logo img {
+    width: 60px;
+    height: 50px;
+    object-fit: contain; /* Keep the image within the bounds */
+}
+
+/* H2 styling */
+.logo h2 {
+    font-size: 1.5rem;
+    color: black;
+    word-wrap: break-word; /* Allows text to break to a new line if needed */
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin-left: 20px;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 2px solid #9393ff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a {
+    color: #384B70;
+    font-weight: 500;
+    font-size: large;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #55679C;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.nav-tabs a {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 25px;
+    margin: 0 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.nav-tabs a:hover {
+    color: #007bff;
+}
+
+.nav-tabs a.active {
+    color: #007bff;
+}
+
+.nav-tabs a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #007bff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-tabs a:hover::after,
+.nav-tabs a.active::after {
+    transform: scaleX(1);
+}
+
+.content-area {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.match-card, .event-card, .player-card, .team-card ,.referee-card{
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-logo {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.match-details, .event-details, .player-details, .team-details {
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+}
+
+.score-card {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.score-card h3 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.score-details {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo h2 {
+        font-size: 1.2rem;
+    }
+
+    .content-area h1 {
+        font-size: 2rem;
+    }
+
+    .content-area p {
+        font-size: 1rem;
+    }
+}

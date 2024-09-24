@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Scoreboard Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/regstration.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="./assets/images/logo.jpg" alt="Logo Image">
+            <h2>LIVE SPORTS SCOREBOARD</h2>
+        </div>
+        <ul>
+            <li><a href="./register.html">Sign In</a></li>
+            <li><a href="./login.html" >Login</a></li>  
+        </ul>
+        </nav>
+    </header>
+      <div class="wrapper">
+        <form id="registrationForm">
+            <h1>Registration</h1>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="input">
+                    <div>
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="firstname" placeholder="Firstname" required>
+                    </div>
+                    <div>
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="username" placeholder="username" required>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Password" required>
+                    </div>
+                    <div>
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="mobile" placeholder="Mobile Number" name="mobile">
+                    </div>
+                    <div>
+                        <i class="fas fa-calendar"></i>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Favorites</legend>
+                <div class="input">
+                    <label for="favorite_sports">Favorite Sports</label>
+                    <div class="option">
+                        <select id="favorite_sports" name="favorite_sports" required>
+                            <option value="football">Football</option>
+                            <option value="cricket">Cricket</option>
+                            <option value="basketball">Basketball</option>
+                            <option value="tennis">Tennis</option>
+                        </select>
+                    </div>
+                    <label for="favorite_team">Favorite Team/Player</label>
+                    <div>
+                        <i class="fas fa-users"></i>
+                        <input type="text" id="favorite_team" placeholder="Favorite Team/Player" name="favorite_team">
+                    </div>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Gender</legend>
+                <div class="gender-btn-group">
+                    <div class="gender-options">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Location</legend>
+                <div class="input">
+                    <label for="country">Country</label>
+                    <div class="option">
+                        <select id="country" name="country" required>
+                            <option value="usa">USA</option>
+                            <option value="india">India</option>
+                            <option value="uk">UK</option>
+                            <option value="australia">Australia</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+    
+            <div class="form-group">
+                <label>
+                    <input type="checkbox" id="terms" required>I agree to the Terms and Conditions
+                </label>
+            </div>
+    
+            <div class="btn-group">
+                <button type="submit" class="btn">Submit</button>
+                <button type="reset" class="btn">Reset</button>
+            </div>
+    
+            <div class="login">
+                <p>Already have an account? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+<script src="./assests/js/regjava.js"></script>
+</body>
+</html>

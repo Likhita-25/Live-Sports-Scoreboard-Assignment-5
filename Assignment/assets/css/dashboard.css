@@ -1,0 +1,373 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    background-image: url('./6-Health-Benefits-of-Playing-Sports-1024x683.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+main {
+    flex-grow: 1; /* Allow the main section to grow */
+    padding-bottom: 149px; /* Space for the footer */
+}
+/* Header Styles */
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 70px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%; /* Ensures nav spans the width of the screen */
+    overflow: hidden; /* Prevents content overflow */
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+    color: black;
+    word-wrap: break-word; /* Ensures long words break if necessary */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+}
+
+nav ul li {
+    margin-left: 20px;
+    padding: 10px 15px; /* Add padding for the curved rectangle effect */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border: 2px solid #9393ff;
+    border-radius: 10px; /* Curved corners */
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+nav ul li a {
+    color: #384B70; /* Blue color for links */
+    font-weight: 500;
+    font-size: large;
+    display: block; /* Ensures the link takes the full space of the li */
+    text-align: center; /* Center the text */
+}
+
+/* Change background on hover */
+nav ul li:hover {
+    background-color:#55679C /* Change background on hover */
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block; /* Show toggle button on small screens */
+    }
+
+    nav ul {
+        display: none; /* Hide menu by default */
+        flex-direction: column; /* Stack items */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Below the header */
+        left: 0;
+        width: 100%; /* Full width */
+        background-color: white; /* Background for the dropdown */
+    }
+
+    nav ul.active {
+        display: flex; /* Show the menu when active */
+    }
+
+    header {
+        flex-direction: column; /* Stack the header content vertically */
+        padding: 10px 0;
+    }
+
+    header nav ul {
+        text-align: center;
+        margin: 0;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header nav ul li a {
+        width: 100%; /* Make navigation links take up full width */
+        padding: 10px 0;
+    }
+}
+
+
+
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+    flex-grow: 1; /* Allow it to grow and push footer down */
+}
+
+.profile-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the image and text */
+    flex-wrap: wrap; /* Allows the text to wrap if necessary */
+}
+
+/* Image styling */
+.logo img {
+    width: 60px;
+    height: 50px;
+    object-fit: contain; /* Keep the image within the bounds */
+}
+
+/* H2 styling */
+.logo h2 {
+    font-size: 1.5rem;
+    color: black;
+    word-wrap: break-word; /* Allows text to break to a new line if needed */
+    margin: 0;
+}
+.profile-pic {
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Profile Info */
+.profile-info {
+    flex-grow: 1;
+}
+
+.profile-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #333;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+table th {
+    background-color: #f4f4f4;
+    text-align: left;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        margin-bottom: 20px;
+    }
+
+    .profile-pic img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    color: white;
+}
+  
+.footer1 {
+    display: flex;
+    flex-direction: row; /* Changed from column to row */
+    align-items: center;
+    justify-content: center; /* To center items horizontally */
+    color: white;
+    margin-top: 15px;
+    gap: 20px; /* Adjust the value to control spacing */
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-wrap: wrap;
+}
+.social-media a {
+    color: white;
+    margin: 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: white;
+}
+.social-media a ion-icon {
+    color: white;
+    background-color: black;
+}
+.social-media a:hover ion-icon {
+    color: red;
+    transform: translateY(5px);
+}
+.footer2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+.footer0 {
+    font-weight: 1200;
+    transition-duration: 1s;
+}
+.footer0:hover {
+    color: rgb(243, 168, 7);
+}
+.footer2 .heading {
+    font-weight: 900;
+    font-size: 18px;
+}
+.footer3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer2 .heading:hover {
+    color: rgb(243, 168, 7);
+}
+.footer2 .div:hover {
+    transform: scale(1.05);
+  }
+.footer3 h4 {
+    margin: 0 10px;
+}
+.footer2 div {
+    margin: 10px;
+}
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo h2 {
+        font-size: 1.2rem; /* Smaller logo size on mobile */
+    }
+
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container p {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        margin-left: 10px; /* Adjust space between links on smaller screens */
+    }
+}
